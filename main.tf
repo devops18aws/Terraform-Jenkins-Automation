@@ -4,7 +4,7 @@ provider "aws" {
 
 # EC2 Instance
 resource "aws_instance" "foo" {
-  ami           = "ami-01a00762f46d584a1" # ap-south-1
+  ami           = "ami-098f18a6382fb4b2d" # ap-south-1
   instance_type = "t3.micro"
 
   tags = {
@@ -14,7 +14,7 @@ resource "aws_instance" "foo" {
 
 # S3 Bucket
 resource "aws_s3_bucket" "demo" {
-  bucket = "testhydbucket20260910"
+  bucket = "testhydbucket-2027"
 
   tags = {
     Name        = "Terraform-S3"
@@ -28,7 +28,7 @@ resource "aws_vpc" "demo-vpc" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "test-vpc"
+    Name = "test-vpc-2026"
   }
 }
 
